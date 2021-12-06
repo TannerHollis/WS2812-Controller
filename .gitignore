@@ -4,7 +4,7 @@
 *.tcl
 .project
 .prj
-WS2812_ImpImnt/*
+WS2812_Implmnt/*
 
 #GitHub ignores
 .gitignore
