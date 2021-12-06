@@ -11,3 +11,6 @@ WS2812_ImpImnt/*
 .gitexcludes
 .gitattributes
 
+*.bak
+*.project
+*.prj
