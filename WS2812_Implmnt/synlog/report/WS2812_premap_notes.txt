@@ -1,7 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN225 |Writing default property annotation file C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\WS2812.sap.
-@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_sel[14] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_sel[15] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_we[14] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_we[15] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.

@@ -1,7 +1,0 @@
-C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synwork\WS2812_comp.srs"  -osyn  "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synwork\WS2812_mult.srs"  -log  "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synlog\WS2812_multi_srs_gen.srr" 
-rc:0 success:1 runtime:0
-file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synwork\WS2812_comp.srs|io:i|time:1638595384|size:21137|exec:0
-file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synwork\WS2812_mult.srs|io:o|time:1638595385|size:8166|exec:0
-file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synlog\WS2812_multi_srs_gen.srr|io:o|time:1638595385|size:860|exec:0
-file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1638332725|size:3128320|exec:1
-file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1638332728|size:3947520|exec:1
