@@ -2,4 +2,12 @@
 *.log
 *.log.back
 *.tcl
-WS2812_ImpImnt/
+.project
+.prj
+WS2812_ImpImnt/*
+
+#GitHub ignores
+.gitignore
+.gitexcludes
+.gitattributes
+
