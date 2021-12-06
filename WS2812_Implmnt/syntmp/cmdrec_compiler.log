@@ -1,0 +1,13 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\c_hdl.exe  -osyn  "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synwork\WS2812_comp.srs"  -hdllog  "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synlog\WS2812_compiler.srr"  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -primux -fixsmult -infer_seqShift -ice -sdff_counter -nram -divnmod -nostructver   -I "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\"  -I C:\lscc\iCEcube2.2020.12\synpbase\lib   -v2001  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -encrypt  -pro  -dmgen  "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\dm"  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\demux_8x16.v" -lib work "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\ram.v" -lib work "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\sb_translator.v" -lib work "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\spi_slave.v" -lib work "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\top.v" -lib work "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\ws2812.v" 
+rc:0 success:1 runtime:2
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synwork\WS2812_comp.srs|io:o|time:1638595384|size:21137|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\synlog\WS2812_compiler.srr|io:o|time:1638595384|size:18579|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1638332731|size:224837|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\demux_8x16.v|io:i|time:1638594399|size:1171|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\ram.v|io:i|time:1638574467|size:556|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\sb_translator.v|io:i|time:1638595372|size:4428|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\spi_slave.v|io:i|time:1638595289|size:2642|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\top.v|io:i|time:1638595234|size:3918|exec:0
+file:C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\ws2812.v|io:i|time:1638594496|size:2837|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\c_hdl.exe|io:i|time:1638332722|size:1338368|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\c_hdl.exe|io:i|time:1638332725|size:1754112|exec:1

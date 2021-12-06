@@ -1,0 +1,38 @@
+* ******************************************************************************
+
+* iCEcube Pin Table
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Dec 4 2021 00:32:22
+
+* Purpose:            Detailed IO and package pin info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Device, iCE40UL640
+Package, SWG16
+
+Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, Pull Up, Pullup resistor, IO Function, IO Bank, 
+---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, 
+A1, PIO_LED, mosi_in, Input, , SB_LVCMOS, No Pull Up, , Simple Input (Open-drain IO), topBank
+A2, PIO_BARCODE, reset_n_in, Input, , SB_LVCMOS, No Pull Up, , Simple Input (Open-drain IO), topBank
+A3, GND, not used, , , , , , , UnknownBank
+A4, PIO_RGB, cs_n_in, Input, , SB_LVCMOS, No Pull Up, , Simple Input (Open-drain IO), topBank
+B1, VSSIO_LED, not used, , , , , , , topBank
+B2, CRESET_B, not used, , , , , , , bottomBank
+B3, VCCIO_0, not used, , , , , , , topBank
+B4, PIO_RGB, clk_spi_in, Input, , SB_LVCMOS, No Pull Up, , Simple Input (Open-drain IO), topBank
+C1, SPI_SCK, not used, , , , , , , bottomBank
+C2, SPI_SO, not used, , , , , , , bottomBank
+C3, PIO_GBIN_CDONE, not used, , , , , , , bottomBank
+C4, PIO_RGB, miso_out, Output, , SB_LVCMOS, No Pull Up, , Simple Output (Open-drain IO), topBank
+D1, SPI_SS_B, led_out, Output, , SB_LVCMOS, No Pull Up, , Simple Output, bottomBank
+D2, SPI_SI, not used, , , , , , , bottomBank
+D3, VCCIO_2, not used, , , , , , , bottomBank
+D4, VCC, not used, , , , , , , UnknownBank
+Total Number of Used Pins, 6

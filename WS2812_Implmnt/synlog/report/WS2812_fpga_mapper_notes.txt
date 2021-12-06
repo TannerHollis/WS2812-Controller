@@ -1,0 +1,22 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO231 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\spi_slave.v":60:0:60:5|Found counter in view:work.spi_slave(verilog) instance bitcnt_rx[4:0] 
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_sel[14] (in view: work.sb_translator(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_sel[15] (in view: work.sb_translator(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_we[14] (in view: work.sb_translator(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_we[15] (in view: work.sb_translator(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Found counter in view:work.sb_translator(verilog) instance cnt_leds[16:0] 
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance state[2] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance state[3] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance state[4] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX1017 :|SB_GB inserted on the net reset_n_i.
+@N: FX1017 :|SB_GB inserted on the net spi_slave_1.bitcnt_rxe_0_i.
+@N: FX1017 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|SB_GB inserted on the net sb_translator_1.state[1].
+@N: FX1017 :|SB_GB inserted on the net sb_translator_1.state_leds_2_sqmuxa.
+@N: FX1017 :|SB_GB inserted on the net spi_slave_1.un3_mosi_data_out.
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\WS2812.edf
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

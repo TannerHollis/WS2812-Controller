@@ -1,0 +1,83 @@
+# Sat Dec 04 00:23:06 2021
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\WS2812_scck.rpt 
+Printing clock  summary report in "C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\WS2812_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start                         Requested     Requested     Clock        Clock                     Clock
+Clock                         Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------------------------
+System                        1.0 MHz       1000.000      system       system_clkgroup           0    
+top|clk_sb_inferred_clock     48.0 MHz      20.830        inferred     Autoconstr_clkgroup_0     534  
+======================================================================================================
+
+@W: MT529 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\spi_slave.v":89:0:89:5|Found inferred clock top|clk_sb_inferred_clock which controls 534 sequential elements including spi_slave_1.bitcnt_tx[4:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\thollis\Google Drive\Verilog\WS2812_NON_CONFIGURABLE_NEW_MUX\WS2812_Implmnt\WS2812.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+Encoding state machine state[7:0] (in view: work.sb_translator(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine state[2:0] (in view: work.ws2812(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_sel[14] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_sel[15] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_we[14] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\sb_translator.v":47:0:47:5|Removing sequential instance ram_we[15] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Dec 04 00:23:06 2021
+
+###########################################################]

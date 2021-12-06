@@ -1,0 +1,567 @@
+4:57:08 PM
+"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "WS2812_syn.prj" -log "WS2812_Implmnt/WS2812.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of WS2812_Implmnt/WS2812.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: THOLLIS2-LT
+
+# Fri Dec 03 16:57:33 2021
+
+#Implementation: WS2812_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module top
+@E: CG389 :"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v":22:11:22:21|Reference to undefined module spi_slave
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:57:33 2021
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:57:33 2021
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 2 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "WS2812_syn.prj" -log "WS2812_Implmnt/WS2812.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of WS2812_Implmnt/WS2812.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: THOLLIS2-LT
+
+# Fri Dec 03 16:58:00 2021
+
+#Implementation: WS2812_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v" (library work)
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":81:16:81:19|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":82:15:82:18|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":83:15:83:18|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":214:15:214:18|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":228:16:228:19|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CS187 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":273:0:273:8|Expecting endmodule
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v" (library work)
+6 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:58:00 2021
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:58:00 2021
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "WS2812_syn.prj" -log "WS2812_Implmnt/WS2812.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of WS2812_Implmnt/WS2812.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: THOLLIS2-LT
+
+# Fri Dec 03 16:58:48 2021
+
+#Implementation: WS2812_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v" (library work)
+@E: CG353 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":81:16:81:20|Expecting digit in radix 2
+@E: CG353 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":82:15:82:19|Expecting digit in radix 2
+@E: CG353 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":83:15:83:19|Expecting digit in radix 2
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":214:15:214:18|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":228:16:228:19|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CS187 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":273:0:273:8|Expecting endmodule
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v" (library work)
+6 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:58:48 2021
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:58:48 2021
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "WS2812_syn.prj" -log "WS2812_Implmnt/WS2812.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of WS2812_Implmnt/WS2812.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: THOLLIS2-LT
+
+# Fri Dec 03 16:59:52 2021
+
+#Implementation: WS2812_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v" (library work)
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":214:15:214:18|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CG431 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":228:16:228:19|Expecting radix character (one of b, o, h, or d) or unsized single bit literal (one of '1, '0, 'x, 'z) 
+@E: CS187 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":273:0:273:8|Expecting endmodule
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v" (library work)
+3 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:59:52 2021
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 16:59:52 2021
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "WS2812_syn.prj" -log "WS2812_Implmnt/WS2812.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of WS2812_Implmnt/WS2812.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: THOLLIS2-LT
+
+# Fri Dec 03 17:00:39 2021
+
+#Implementation: WS2812_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v" (library work)
+@I::"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v":3:7:3:15|Synthesizing module spi_slave in library work.
+
+@N: CG179 :"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v":60:67:60:79|Removing redundant assignment.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v":48:0:48:5|Pruning unused register data_receiving. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v":48:0:48:5|Pruning unused register data_transmitted. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\spi_slave.v":48:0:48:5|Pruning unused register data_transmitting. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":1:7:1:19|Synthesizing module sb_translator in library work.
+
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal rgb_data_tmp[23:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal num_leds[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal send_leds_n. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal ram_we[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal ram_sel[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal ram_re[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal r_min[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal r_max[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal r_adjust[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal instr_out[23:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal g_min[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal g_max[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal g_adjust[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal b_min[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal b_max[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal b_adjust[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal addr_out[8:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[1:1]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[2:2]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[3:3]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[4:4]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[5:5]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[6:6]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out_cl[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Feedback mux created for signal data_out[7:7]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v":1:7:1:12|Synthesizing module ws2812 in library work.
+
+@W: CG133 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v":51:12:51:12|Object i is declared but not assigned. Either assign a value or remove the declaration.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v":53:4:53:9|Feedback mux created for signal new_data_req. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v":53:4:53:9|Feedback mux created for signal data. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v":2:7:2:9|Synthesizing module top in library work.
+
+@N: CG364 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":1:7:1:9|Synthesizing module ram in library work.
+
+@N: CL134 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":12:1:12:6|Found RAM mem, depth=512, width=8
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[7]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[6]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[5]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[4]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[3]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[2]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[1]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":17:1:17:6|Pruning unused register dout_cl[0]. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ram.v":6:17:6:23|Sharing sequential element dout_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CL201 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v":53:4:53:9|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL249 :"C:\Users\thollis\Google Drive\Verilog\WS2812\ws2812.v":53:4:53:9|Initial value is not supported on state machine state
+@N: CL201 :"C:\Users\thollis\Google Drive\Verilog\WS2812\sb_translator.v":57:0:57:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 8 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+   111
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec 03 17:00:40 2021
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v":2:7:2:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v":2:7:2:9|Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec 03 17:00:40 2021
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec 03 17:00:40 2021
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File C:\Users\thollis\Google Drive\Verilog\WS2812\WS2812_Implmnt\synwork\WS2812_comp.srs changed - recompiling
+@N: NF107 :"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v":2:7:2:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\thollis\Google Drive\Verilog\WS2812\top.v":2:7:2:9|Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Dec 03 17:00:41 2021
+
+###########################################################]
+Pre-mapping Report
+
+# Fri Dec 03 17:00:42 2021
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\thollis\Google Drive\Verilog\WS2812\WS2812_Implmnt\WS2812_scck.rpt 
+Printing clock  summary report in "C:\Users\thollis\Google Drive\Verilog\WS2812\WS2812_Implmnt\WS2812_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance ram_sel[15:0] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start          Requested     Requested     Clock        Clock                     Clock
+Clock          Frequency     Period        Type         Group                     Load 
+---------------------------------------------------------------------------------------
+top|clk_sb     4.1 MHz       243.238       inferred     Autoconstr_clkgroup_0     671  
+=======================================================================================
+
+@W: MT529 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Found inferred clock top|clk_sb which controls 671 sequential elements including sb_translator_1.cnt[16:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\thollis\Google Drive\Verilog\WS2812\WS2812_Implmnt\WS2812.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+Encoding state machine state[7:0] (in view: work.sb_translator(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine state[2:0] (in view: work.ws2812(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 17:00:42 2021
+
+###########################################################]
+Map & Optimize Report
+
+# Fri Dec 03 17:00:42 2021
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":72:2:72:5|Removing user instance sb_translator_1.data_out_cl_15[0] because it is equivalent to instance sb_translator_1.data_out_cl_14[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":72:2:72:5|Removing user instance sb_translator_1.data_out_cl_14[0] because it is equivalent to instance sb_translator_1.data_out_cl_12[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":72:2:72:5|Removing user instance sb_translator_1.data_out_cl_13[0] because it is equivalent to instance sb_translator_1.data_out_cl_11[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":72:2:72:5|Removing user instance sb_translator_1.data_out_cl_12[0] because it is equivalent to instance sb_translator_1.data_out_cl_10[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":72:2:72:5|Removing user instance sb_translator_1.data_out_cl_11[0] because it is equivalent to instance sb_translator_1.data_out_cl_9[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":72:2:72:5|Removing user instance sb_translator_1.data_out_cl_10[0] because it is equivalent to instance sb_translator_1.data_out_cl_8[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance sb_translator_1.data_out_cl_7[0] because it is equivalent to instance sb_translator_1.data_out_cl_6[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance sb_translator_1.data_out_cl_6[0] because it is equivalent to instance sb_translator_1.data_out_cl_4[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance sb_translator_1.data_out_cl_5[0] because it is equivalent to instance sb_translator_1.data_out_cl_3[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance sb_translator_1.data_out_cl_4[0] because it is equivalent to instance sb_translator_1.data_out_cl_2[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance data_out_cl_2[0] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance data_out_cl_3[0] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance data_out_cl_1[0] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.num_leds[15:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.r_min[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.r_max[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.r_adjust[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.g_min[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.g_max[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.g_adjust[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.b_min[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.b_max[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|User-specified initial value defined for instance sb_translator_1.b_adjust[7:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\ws2812.v":53:4:53:9|User-specified initial value defined for instance ws2812.bit_counter[11:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\spi_slave.v":98:0:98:5|User-specified initial value defined for instance spi_slave_1.bitcnt_tx[4:0] is being ignored. 
+@W: FX1039 :"c:\users\thollis\google drive\verilog\ws2812\spi_slave.v":69:0:69:5|User-specified initial value defined for instance spi_slave_1.bitcnt_rx[4:0] is being ignored. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[1\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[8\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[15\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[5\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[14\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[10\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[13\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[11\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[3\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[4\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[2\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[9\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[7\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[12\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[6\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\thollis\google drive\verilog\ws2812\ram.v":12:1:12:6|RAM genblk1\.genblk1\[0\]\.ram_i.mem[7:0] (in view: work.top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+Encoding state machine state[7:0] (in view: work.sb_translator(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+@N: MO231 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Found counter in view:work.sb_translator(verilog) instance cnt_leds[15:0] 
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance state[2] (in view: work.sb_translator(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+Encoding state machine state[2:0] (in view: work.ws2812(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"c:\users\thollis\google drive\verilog\ws2812\spi_slave.v":69:0:69:5|Found counter in view:work.spi_slave(verilog) instance bitcnt_rx[4:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 136MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 151MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 151MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 151MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 151MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 151MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 151MB)
+
+@N: BN362 :"c:\users\thollis\google drive\verilog\ws2812\sb_translator.v":57:0:57:5|Removing sequential instance sb_translator_1.data_out_cl[0] (in view: work.top(verilog)) because it does not drive other instances.
+@E: FX741 :"c:\users\thollis\google drive\verilog\ws2812\spi_slave.v":98:0:98:5|Part ice40ul640 does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 03 17:00:44 2021
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 6 seconds5:08:24 PM

@@ -1,0 +1,1 @@
+@W: MT529 :"c:\users\thollis\google drive\verilog\ws2812_non_configurable_new_mux\spi_slave.v":89:0:89:5|Found inferred clock top|clk_sb_inferred_clock which controls 534 sequential elements including spi_slave_1.bitcnt_tx[4:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -1,0 +1,35 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40UL640SWG16 (Lattice)
+
+----------------------------------------------------------------------
+########   Utilization report for  Top level view:   ws2812   ########
+======================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     22                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block ws2812:	22 (15.83 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       87                 100 %                
+CARRYS     27                 100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block ws2812:	114 (82.01 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     1                  100 %                
+=================================================
+Total IO PADS in the block ws2812:	1 (0.72 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+
