@@ -1,0 +1,5 @@
+# iCEcube2 excludes
+*.log
+*.log.back
+*.tcl
+WS2812_ImpImnt/
