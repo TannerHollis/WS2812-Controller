@@ -16,7 +16,7 @@ module top_tb;
 	
 	wire [23:0] mosi_write, mosi_send_leds;
 	assign mosi_write = 	{3'b100, i[12:0], i[7:0]};
-	assign mosi_send_leds = {3'b111, i[12:0], i[7:0]};
+	assign mosi_send_leds = {3'b111, 21'd2};
 	
 	initial
 	begin
@@ -59,7 +59,7 @@ module top_tb;
 		end
 		#20
 		cs_n = 1;
-		#10000 $stop;
+		#15000 $stop;
 	end
 	
 	initial
@@ -67,13 +67,13 @@ module top_tb;
 	
 	
 	top top(
-		.reset_n(reset_n),
+		.reset_n_in(reset_n),
 		.clk_sb(clk_sb),
 		
-		.clk_spi(clk_spi),
-		.mosi(mosi),
-		.miso(miso),
-		.cs_n(cs_n),
+		.clk_spi_in(clk_spi),
+		.mosi_in(mosi),
+		.miso_out(miso),
+		.cs_n_in(cs_n),
 		
 		.led_out(led_out));
 endmodule

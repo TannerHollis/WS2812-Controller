@@ -31,7 +31,6 @@ assign clk_neg = ((clk == 2'b10) && ((CPOL == 0) || (CPOL == 3))) || ((clk == 2'
 
 //Input data buffer due to clock buffer
 reg [1:0] mosi_buffer;
-reg miso_en;
 
 //Handle SPI in 24-bits format, so we need a 5 bits counter to count the bits as they come in
 reg [4:0] bitcnt_rx = 5'd0;

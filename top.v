@@ -1,6 +1,12 @@
 //top.v
+`include "/common_defines.v"
+
 module top(
 	input reset_n_in,
+	
+	`ifdef SIMULATE
+		input clk_sb,
+	`endif
 	
 	input clk_spi_in,
 	input mosi_in,
@@ -10,7 +16,7 @@ module top(
 	output led_out
 );
 	//Declare wires for pinout
-	wire mosi, miso, clk_spi, clk_sb, cs_n, reset_n, led;
+	wire mosi, miso, clk_spi, cs_n, reset_n, led;
 	
 	//Local Parameters, currently supported: 14
 	localparam NUM_MEM_BLOCKS = 14;
@@ -19,16 +25,20 @@ module top(
 	reg clk_en = 1'b1;
 	reg clk_pu = 1'b1;
 	
-	//Instantiate system bus clock module
-	SB_HFOSC OSCInst0 (
-		.CLKHFEN(clk_en),
-		.CLKHFPU(clk_pu),
-		.CLKHF(clk_sb)
-	) /* synthesis ROUTE_THROUGH_FABRIC = 0 */;
-	defparam OSCInst0.CLKHF_DIV = "0b00";
+	`ifndef SIMULATE
+		wire clk_sb;
+		
+		//Instantiate system bus clock module
+		SB_HFOSC OSCInst0 (
+			.CLKHFEN(clk_en),
+			.CLKHFPU(clk_pu),
+			.CLKHF(clk_sb)
+		) /* synthesis ROUTE_THROUGH_FABRIC = 0 */;
+		defparam OSCInst0.CLKHF_DIV = "0b00";
+	`endif
 	
 	//Declare wires for spi_slave module
-	wire miso_tx, mosi_rx, miso_out, miso_en;
+	wire miso_tx, mosi_rx, miso_en;
 	wire [23:0] miso_data_in, mosi_data_out;
 	
 	//Instantiate spi_slave module
@@ -115,53 +125,62 @@ module top(
 	end
 	endgenerate
 	
-	SB_IO_OD #(
-		.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
-		.NEG_TRIGGER(1'b0)    
-	) mosi_input (
-		.PACKAGEPIN(mosi_in), // connect to input pin
-		.DIN0(mosi)        // with data from this wire
-	);
-	
-	SB_IO_OD #(
-		.PIN_TYPE(6'b01_1001), // configure as simple open-drain output pin
-		.NEG_TRIGGER(1'b0)
-	) miso_output (
-		.PACKAGEPIN(miso_out), // connect to input pin
-		.DOUT0(miso),        // with data from this wire
-		.OUTPUTENABLE(miso_en)
-	);
-	
-	SB_IO_OD #(
-		.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
-		.NEG_TRIGGER(1'b0)    
-	) clk_spi_input (
-		.PACKAGEPIN(clk_spi_in), // connect to input pin
-		.DIN0(clk_spi)        // with data from this wire
-	);
-	
-	SB_IO_OD #(
-		.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
-		.NEG_TRIGGER(1'b0)    
-	) cs_n_input (
-		.PACKAGEPIN(cs_n_in), // connect to input pin
-		.DIN0(cs_n)        // with data from this wire
-	);
-	
-	SB_IO_OD #(
-		.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
-		.NEG_TRIGGER(1'b0)    
-	) reset_n_input (
-		.PACKAGEPIN(reset_n_in), // connect to input pin
-		.DIN0(reset_n)        // with data from this wire
-	);
-	
-	SB_IO #(
-		.PIN_TYPE(6'b01_1000), // configure as simple output pin
-		.NEG_TRIGGER(1'b0)
-	) led_output (
-		.PACKAGE_PIN(led_out), // connect to output pin
-		.D_OUT_0(led)        // with data from this wire
-	);
+	`ifdef SIMULATE
+		assign mosi = mosi_in;
+		assign miso_out = (miso_en) ? miso : 1'bz;
+		assign clk_spi = clk_spi_in;
+		assign cs_n = cs_n_in;
+		assign reset_n = reset_n_in;
+		assign led_out = led;
+	`else
+		SB_IO_OD #(
+			.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
+			.NEG_TRIGGER(1'b0)    
+		) mosi_input (
+			.PACKAGEPIN(mosi_in), // connect to input pin
+			.DIN0(mosi)        // with data from this wire
+		);
+		
+		SB_IO_OD #(
+			.PIN_TYPE(6'b01_1001), // configure as simple open-drain output pin
+			.NEG_TRIGGER(1'b0)
+		) miso_output (
+			.PACKAGEPIN(miso_out), // connect to input pin
+			.DOUT0(miso),        // with data from this wire
+			.OUTPUTENABLE(miso_en)
+		);
+		
+		SB_IO_OD #(
+			.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
+			.NEG_TRIGGER(1'b0)    
+		) clk_spi_input (
+			.PACKAGEPIN(clk_spi_in), // connect to input pin
+			.DIN0(clk_spi)        // with data from this wire
+		);
+		
+		SB_IO_OD #(
+			.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
+			.NEG_TRIGGER(1'b0)    
+		) cs_n_input (
+			.PACKAGEPIN(cs_n_in), // connect to input pin
+			.DIN0(cs_n)        // with data from this wire
+		);
+		
+		SB_IO_OD #(
+			.PIN_TYPE(6'b00_0001), // configure as simple open-drain input pin
+			.NEG_TRIGGER(1'b0)    
+		) reset_n_input (
+			.PACKAGEPIN(reset_n_in), // connect to input pin
+			.DIN0(reset_n)        // with data from this wire
+		);
+		
+		SB_IO #(
+			.PIN_TYPE(6'b01_1000), // configure as simple output pin
+			.NEG_TRIGGER(1'b0)
+		) led_output (
+			.PACKAGE_PIN(led_out), // connect to output pin
+			.D_OUT_0(led)        // with data from this wire
+		);
+	`endif
 	
 endmodule

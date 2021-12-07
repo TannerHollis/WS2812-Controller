@@ -1,3 +1,5 @@
+//ws2812.v
+
 module ws2812 (
 	input reset_n,
     input wire [23:0] rgb_data,
