@@ -72,7 +72,6 @@ begin
 			STATE_IDLE : begin
 				instr_tx <= 1'b0;
 				send_leds_n <= 1'b1; //Invert for active low
-				cnt <= 0;
 				if(instr_rx)
 				begin
 					instr_tmp <= instr_in;
@@ -100,17 +99,9 @@ begin
 						end
 						3'b011 : begin
 							state <= STATE_CLEAR_RAM;
-							addr_out <= 0;
-							data_out <= 0;
-							ram_sel <= 1;
-							ram_we <= 1;
 						end
 						3'b101 : begin
 							state <= STATE_FILL_RAM;
-							addr_out <= 0;
-							data_out <= instr_in[7:0];
-							ram_sel <= 1;
-							ram_we <= 1;
 						end
 						3'b111 : begin
 							state <= STATE_SEND_LEDS;
@@ -118,7 +109,7 @@ begin
 							addr_out <= 0;
 							ram_we <= 0;
 							ram_sel <= 1;
-							cnt_leds <= 0;
+							cnt_leds <= 1;
 							cnt_ram_read <= 0;
 							num_leds <= instr_in[15:0];
 						end
@@ -149,10 +140,14 @@ begin
 					cnt <= cnt + 1;
 					addr_out <= cnt[8:0];
 					data_out <= instr_tmp[7:0];
-					ram_we <= 16'b1 << cnt[12:9];
+					ram_we <= 1 << cnt[12:9];
+					ram_sel <= 1 << cnt[12:9];
 				end
 				else
+				begin
 					state <= STATE_IDLE;
+					cnt <= 0;
+				end
 			end
 			STATE_CLEAR_RAM : begin
 				instr_tmp[7:0] <= 0;
@@ -162,8 +157,8 @@ begin
 				case(state_leds)
 					STATE_SEND_LEDS_PREPARE_DATA : begin
 						cnt_ram_read <= cnt_ram_read + 1;
-						addr_out <= cnt_leds[8:0] + 1;
-						ram_sel <= 16'd1 << (cnt_leds[12:9] + 1);
+						addr_out <= cnt_leds[8:0];
+						ram_sel <= 1 << cnt_leds[12:9];
 						case(cnt_ram_read)
 							0 : begin
 								rgb_data_tmp[15:8] <= data_in;
