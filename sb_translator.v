@@ -170,7 +170,6 @@ begin
 							end
 							2 : begin
 								rgb_data_tmp[23:16] <= data_in;
-								cnt_leds <= cnt_leds + 1;
 								state_leds <= STATE_SEND_LEDS_WAIT;
 								send_leds_n <= 0;
 							end
