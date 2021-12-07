@@ -1,3 +1,3 @@
 //common_defines.v
 
-`define SIMULATE 1
+//`define SIMULATE 1
