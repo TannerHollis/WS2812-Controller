@@ -1,4 +1,5 @@
 //ws2812.v
+`include "/common_defines.v"
 
 module ws2812 (
 	input reset_n,
@@ -14,30 +15,22 @@ module ws2812 (
     parameter CLK_MHZ = 48;
     localparam LED_BITS = $clog2(NUM_LEDS);
 
-    /*
-    great information here:
+    /* 
+	
+	WS2812 datasheet: https://cdn-shop.adafruit.com/datasheets/WS2812.pdf
 
-    * https://cpldcpu.wordpress.com/2014/01/14/light_ws2812-library-v2-0-part-i-understanding-the-ws2812/
-    * https://github.com/japaric/ws2812b/blob/master/firmware/README.md
-
-    period 1200ns:
-        * t on  800ns
-        * t off 400ns
-
-    end of frame/reset is > 50us. I had a bug at 50us, so increased to 65us
-
-    More recent ws2812 parts require reset > 280us. See: https://blog.particle.io/2017/05/11/heads-up-ws2812b-neopixels-are-about-to-change/
-
-    clock period at 12MHz = 83ns:
-        * t on  counter = 10, makes t_on  = 833ns
-        * t off counter = 5,  makes t_off = 416ns
-        * reset is 800 counts             = 65us
-
+    clock period at 48MHz = 20.833ns:
+        t0_on = 350ns
+        t1_on = 700ns
+		t_period = 1.25us = 1250ns
+        t_reset = 65us = 65000ns
     */
-    parameter t0_on = 17; 		//ceil(800ns/20.833ns)
-    parameter t1_on = 34; 		//ceil(600ns/20.833ns)
-    parameter t_reset = 3120;	//ceil(65us/20.833ns)
-    localparam t_period = 60;	//ceil(1.25us/20.833ns)
+	`ifdef WS2812
+		parameter t0_on = 17; 		//ceil(350ns/20.833ns)
+		parameter t1_on = 34; 		//ceil(700ns/20.833ns)
+		parameter t_reset = 3120;	//ceil(65us/20.833ns)
+		localparam t_period = 60;	//ceil(1.25us/20.833ns)
+	`endif
 
     localparam COUNT_BITS = $clog2(t_reset);
 
