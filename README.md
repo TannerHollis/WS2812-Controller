@@ -66,7 +66,8 @@ When the device receives a "send_leds" instruction, since the RAM is only 8 bits
 
 The "clear_ram" and "fill_ram" instruction are to provide the user with a quick way to fill the ram with a given value or to quickly clear the values stored in RAM. This process is very fast, because it will execute the entire write operation at the speed of the internal system frequency.
 
-[Bus Translator State Diagram](/Images/WS2812_Device_Overview-Bus Translator.png)
+**Bus Translator Device Architecture**
+![Bus Translator State Diagram](/Images/WS2812_Device_Overview-Bus%20Translator.png)
 
 ## WS2812 Driver
 The LED driver in this device is very simple. It consists of two counters, one for each bit in the 24bit data and one for the bits for the LED. Simply put, when both counters are at zero, the WS2812 module will signal that it needs new RGB data, which latches the input to the module. Upon this output signal, the bus translator will increment the led counter. Since the WS2812  module is in control of the LED counter, the WS2812 will only operate while the "send_leds_n" signal is active low.
