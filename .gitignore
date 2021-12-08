@@ -6,11 +6,6 @@
 .prj
 WS2812_Implmnt/*
 
-#GitHub ignores
-.gitignore
-.gitexcludes
-.gitattributes
-
 *.bak
 *.project
 *.prj

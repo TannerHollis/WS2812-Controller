@@ -25,6 +25,7 @@ module ws2812 (
 		t_period = 1.25us = 1250ns
         t_reset = 65us = 65000ns
     */
+	
 	`ifdef WS2812
 		parameter t0_on = 17; 		//ceil(350ns/20.833ns)
 		parameter t1_on = 34; 		//ceil(700ns/20.833ns)

@@ -1,6 +1,6 @@
 //common_defines.v
 
-//`define SIMULATE 1
+//`define SIMULATE
 `define WS2812
 //`define WS2812B
 //`define WS2813
