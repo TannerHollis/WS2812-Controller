@@ -18,6 +18,7 @@ Ideally there should be little to no overhead in microcontrollers for the actual
 ## FPGA Based
 
 After looking at the ["smallest FPGA" in the world](https://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra), I was curious to check it out for myself. Indeed, it is very small at just 1.4mm x 1.4mm with only 16 pins. In fact, it gets worse at only 10 useable I/O's. But wait, 4 of the 10 I/O's are dedicated SPI port programming lines, leaving you with only 6 I/O's. Oh wait, don't forget that there is only *one* traditional push-pull output and the other 5 are open-drain outputs. The ICE40UL640 also has 640 LUTs (LookUp Tables), and although it's not a good measure to use for capacity in FPGAs, it is a good metric when compared to a basic FGPA like the [Intel Cyclone V-A2](https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/hb/cyclone-v/cv_51001.pdf) which has 25,000 LUTs. 
+
 One really great thing about the ICE40UL640 is the RAM included. There are 14 blocks of 512x8bit ram in this FPGA which are 100% utilized for memory. Users can utilize this memory however they want, whether it be for user-data or purely LED data. Each LED requires 24bits of data, which means there is a total capacity of 2389 LEDs in one WS2812 Driver. In fact, this device could be used as additional RAM, which is easy to interface using SPI. Albeit, not the fastest memory controller due to the method of SPI clock detection.
 
 **Below is the Device Architecture**
