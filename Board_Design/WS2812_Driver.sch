@@ -602,7 +602,7 @@ F 3 "~" H 7200 5400 50  0001 C CNN
 	1    7200 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 6850 5600 0    50   Input ~ 0
+Text GLabel 7650 5600 2    50   Input ~ 0
 SPI_MOSI
 Wire Wire Line
 	7650 5500 7500 5500
@@ -621,7 +621,7 @@ Wire Wire Line
 Text GLabel 7650 5400 2    50   Input ~ 0
 SPI_MISO
 Wire Wire Line
-	6850 5600 7000 5600
+	7650 5600 7500 5600
 $Comp
 L power:+3.3V #PWR0117
 U 1 1 61B33582
@@ -640,18 +640,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0118
 U 1 1 61B38A83
-P 7750 5825
-F 0 "#PWR0118" H 7750 5575 50  0001 C CNN
-F 1 "GND" H 7755 5652 50  0000 C CNN
-F 2 "" H 7750 5825 50  0001 C CNN
-F 3 "" H 7750 5825 50  0001 C CNN
-	1    7750 5825
-	1    0    0    -1  
+P 6750 5825
+F 0 "#PWR0118" H 6750 5575 50  0001 C CNN
+F 1 "GND" H 6755 5652 50  0000 C CNN
+F 2 "" H 6750 5825 50  0001 C CNN
+F 3 "" H 6750 5825 50  0001 C CNN
+	1    6750 5825
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 5825 7750 5600
+	6750 5825 6750 5600
 Wire Wire Line
-	7750 5600 7500 5600
+	6750 5600 7000 5600
 NoConn ~ 7500 5300
 $Comp
 L Connector:TestPoint J11

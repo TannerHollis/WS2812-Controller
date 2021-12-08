@@ -1,0 +1,14 @@
+### Module positions - created on 12/08/21 09:07:37 ###
+### Printed by Pcbnew version pcbnew (5.1.10)-1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val             Package                       PosX       PosY       Rot  Side
+C1        1U              C_0402_1005Metric           8.5000    16.0200  270.0000  top
+C2        10U             C_0402_1005Metric          21.0000    19.5000  270.0000  top
+C3        1U              C_0402_1005Metric          14.0000    16.0000  270.0000  top
+C4        1U              C_0402_1005Metric          12.6000    16.0000  270.0000  top
+R1        10K             R_0402_1005Metric           8.5000    14.0000   90.0000  top
+R2        10K             R_0402_1005Metric          13.5000     6.9900  270.0000  top
+R3        10K             R_0402_1005Metric          14.5000    13.0100   90.0000  top
+U2        TLV7111225DSER  WSON-6_1.5x1.5mm_P0.5mm    10.5000    16.0000    0.0000  top
+## End
