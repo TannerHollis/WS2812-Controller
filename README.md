@@ -20,7 +20,7 @@ After looking at the ["smallest FPGA" in the world](https://www.latticesemi.com/
 One really great thing about the ICE40UL640 is the RAM included. There are 14 blocks of 512x8bit ram in this FPGA which are 100% utilized for memory. Users can utilize this memory however they want, whether it be for user-data or purely LED data. Each LED requires 24bits of data, which means there is a total capacity of 2389 LEDs in one WS2812 Driver. In fact, this device could be used as additional RAM, which is easy to interface using SPI. Albeit, not the fastest memory controller due to the method of SPI clock detection.
 
 **Below is the Device Architecture**
-![Device Architecture](/Images/WS2812_Device_Overview-Device%20Overview.pdf)
+![Device Architecture](/Images/WS2812_Device_Overview-Device%20Overview.png)
 
 ## SPI 
 The SPI module in this device runs off of the device's internal High Frequency Oscillator at 48 MHz. Common practices of SPI communication protocols in FPGAs use clock-domain crossing, which means the internal SPI module operates based on two clocks. Configurations like this tend to operate at higher speeds, but require more logic elements to synthesize. Since this device is so limited in total number of elements, this device uses a "buffer clock" design. Using a buffer of only two clock cycles means, that the effective SPI input clock frequency must be half of the device's operating frequency. For more stable operation, the maximum SPI clock frequency should be:
@@ -66,7 +66,7 @@ When the device receives a "send_leds" instruction, since the RAM is only 8 bits
 
 The "clear_ram" and "fill_ram" instruction are to provide the user with a quick way to fill the ram with a given value or to quickly clear the values stored in RAM. This process is very fast, because it will execute the entire write operation at the speed of the internal system frequency.
 
-[Bus Translator State Diagram](/Images/WS2812_Device_Overview-Bus Translator.pdf)
+[Bus Translator State Diagram](/Images/WS2812_Device_Overview-Bus Translator.png)
 
 ## WS2812 Driver
 The LED driver in this device is very simple. It consists of two counters, one for each bit in the 24bit data and one for the bits for the LED. Simply put, when both counters are at zero, the WS2812 module will signal that it needs new RGB data, which latches the input to the module. Upon this output signal, the bus translator will increment the led counter. Since the WS2812  module is in control of the LED counter, the WS2812 will only operate while the "send_leds_n" signal is active low.
