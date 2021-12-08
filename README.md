@@ -34,11 +34,11 @@ However, to ensure more stable communications it is recommended to operate well 
 This device uses 24 bit (3 byte) commands to operate the device, typically consisting of the following format:
 
     //n'bx = don't care of size n bits
-    write = 	{3'b100, addr[12:0], data[7:0]};
-    read = 		{3'b000, addr[12:0], 8'bx};
-    clear_ram = {3'b011, 21'bx};
-    fill_ram = 	{3'b101, 13'bx, data[7:0]};
-    send_leds = {3'b111, 8'bx, num_leds[12:0]};
+    write =		{3'b100, addr[12:0], data[7:0]};
+    read =		{3'b000, addr[12:0], 8'bx};
+    clear_ram =	{3'b011, 21'bx};
+    fill_ram =	{3'b101, 13'bx, data[7:0]};
+    send_leds =	{3'b111, 8'bx, num_leds[12:0]};
 
 There are only a few instructions required to operate this device:
 |op|Binary|Hex|Parameter(s)|Description|
@@ -51,8 +51,8 @@ There are only a few instructions required to operate this device:
 
 A shorthand way of declaring instructions in the c language:
 
-    uint8_t op = 0x80; 		//write op
-    uint16_t addr = 0x1C00; //maximum address to write to (7168)
+    uint8_t op = 0x80;		//write op
+    uint16_t addr = 0x1C00;	//maximum address to write to (7168)
     uint8_t data = 0xAA;	//8'b10101010
     
     uint8_t instr[3];
