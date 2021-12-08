@@ -1,4 +1,5 @@
 
+
 # WS2812 Controller
 
  - WS2812 LED: [WS2812](https://cdn-shop.adafruit.com/datasheets/WS2812.pdf)
@@ -75,4 +76,10 @@ The LED driver in this device is very simple. It consists of two counters, one f
 To complete the data transmission, the controller must send a reset signal. In the WS2812, the reset signal must be at least 65us.
 
 ## RAM
-The one difficulty in this device, the [ICE40UL640](https://www.digikey.com/en/products/detail/lattice-semiconductor-corporation/ICE40UL640-SWG16ITR1K/5130904), is that it doesn't support tri-states. The more normal approach to using a true bus configuration would be to have a single wire connecting to each of the RAM modules "data_out" port. During a read sequence, the unselected RAM modules "data_out" port would be put in high-impedance as to not conflict with the input to the bus translator from the RAM modules. Instead of using a high-impedance state, this device utilizes a demultiplexer (i.e. "demux") that is 8 bitsx16 blocks wide. The input to the demux is a 127 bit wide bus. A selector input to the "demux" will actively change the output of the demux based on which bit of the selector is active.
+The one difficulty in this device, the ICE40UL640, is that it [doesn't support tri-states](https://www.latticesemi.com/en/Support/AnswerDatabase/4/7/7/4771). The more normal approach to using a true bus configuration would be to have a single wire connecting to each of the RAM modules "data_out" port. During a read sequence, the unselected RAM modules "data_out" port would be put in high-impedance as to not conflict with the input to the bus translator from the RAM modules. Instead of using a high-impedance state, this device utilizes a demultiplexer (i.e. "demux") that is 8 bitsx16 blocks wide. The input to the demux is a 127 bit wide bus. A selector input to the "demux" will actively change the output of the demux based on which bit of the selector is active.
+
+## TODO
+
+ - [ ] Develop standard C Library for use with microcontrollers
+ - [ ] Depending on synthesis size, add programmable LED output settings and more functionality
+ - [ ] Finish documenta...
