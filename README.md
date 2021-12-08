@@ -50,16 +50,22 @@ There are only a few instructions required to operate this device:
 |fill_ram|101|0xA0|data|fill ram with data|
 |send_leds|111|0xE0|num_leds|send leds stopping at num_leds|
 
-A shorthand way of declaring instructions in the c language:
+A shorthand way of declaring instructions in the c language psuedocode:
 
     uint8_t op = 0x80;	//write op
     uint16_t addr = 0x1C00;	//maximum address to write to (7168)
     uint8_t data = 0xAA;	//8'b10101010
     
-    uint8_t instr[3];
-    instr[0] = data;
-    instr[1] = addr;
-    instr[2] = (addr >> 8) | op;
+    uint8_t instr[3];	//Sending MSB first
+    instr[0] = (addr >> 8) | op; 
+	instr[1] = addr;
+	instr[2] = data;
+	
+	GPIO_SetPin(&CS_n, 0);
+	SPI_Transmit(&instr, sizeof(instr)); //SPI Transmit set to MSB, CPOL = 0, CPHA = 0
+	GPIO_SetPin(&CS_n, 1);
+    
+**Although this device in hardware is configured for CPOL = 0 and CPHA = 0, future versions might be able to support other SPI transmission configurations.**
 
 ## Bus Translator
 The "bus translator" in this device is the main state machine responsible for controlling the memory operations as well as preparing the data for the LED Driver module. The bus translator sits idle waiting for a valid instruction to be present. Once it is alerted of a valid instruction, the bus translator will execute the instruction. Both the read and write instructions only take one clock cycle after alerted. 
@@ -75,6 +81,8 @@ The "clear_ram" and "fill_ram" instruction are to provide the user with a quick 
 The LED driver in this device is very simple. It consists of two counters, one for each bit in the 24bit data and one for the bits for the LED. Simply put, when both counters are at zero, the WS2812 module will signal that it needs new RGB data, which latches the input to the module. Upon this output signal, the bus translator will increment the led counter. Since the WS2812  module is in control of the LED counter, the WS2812 will only operate while the "send_leds_n" signal is active low.
 
 To complete the data transmission, the controller must send a reset signal. In the WS2812, the reset signal must be at least 65us.
+
+**This device currently only supports the WS2812 RGB LED, future versions will support other various timing-based RGB LEDs**
 
 ## RAM
 The one difficulty in this device, the ICE40UL640, is that it [doesn't support tri-states](https://www.latticesemi.com/en/Support/AnswerDatabase/4/7/7/4771). The more normal approach to using a true bus configuration would be to have a single wire connecting to each of the RAM modules "data_out" port. During a read sequence, the unselected RAM modules "data_out" port would be put in high-impedance as to not conflict with the input to the bus translator from the RAM modules. Instead of using a high-impedance state, this device utilizes a demultiplexer (i.e. "demux") that is 8 bitsx16 blocks wide. The input to the demux is a 127 bit wide bus. A selector input to the "demux" will actively change the output of the demux based on which bit of the selector is active.
